@@ -1,0 +1,82 @@
+.main-body{
+    background: #cfe2f3;
+    color: #000;
+    padding: 20px;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Blue */
+.info {
+    border-color: #626a73;
+    color: #626a73;
+  }
+  
+  .info:hover {
+    background: #626a73;
+    color: white;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  td, th {
+   
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9cb9c;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #d9d9d9;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .mt-10 {
+      margin-top: 10px;
+  }
+
+  .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid black;
+  }
+
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+}
+
+.pagination{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 14px;
+}

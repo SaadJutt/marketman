@@ -1,0 +1,47 @@
+<div>
+    <button class="btn info" ng-click="back()">Back</button>
+    <button class="btn info" ng-if="!editAble" ng-click="onEditable()">Edit</button>
+    <button class="btn info" ng-if="editAble" ng-click="onSave()">Save</button>
+    <button class="btn info" ng-click="onDelete(user.id)">Delete</button>
+    <div class="mt-10">
+        <img src="{{ user.imageLarge }}" >
+
+        <div ng-if="!editAble">
+            <div>
+                <Span> Full Name : </Span> {{ user.firstName }} {{ user.lastName }}
+    
+            </div>
+    
+            <div>
+                <Span> Email : </Span> {{ user.email }}
+            </div>
+    
+            <div>
+                <Span> Phone : </Span> {{ user.phone }}
+            </div>
+    
+            <div>
+                <Span> Country : </Span> {{ user.country }}
+            </div>
+        </div>
+
+        <div ng-if="editAble">
+            <div>
+                <Span> Full Name : </Span> <input type="text" ng-model="user.firstName" />
+            </div>
+    
+            <div>
+                <Span> Email : </Span> <input type="email" ng-model="user.email" />
+            </div>
+    
+            <div>
+                <Span> Phone : </Span> <input type="tel" ng-model="user.phone" />
+            </div>
+    
+            <div>
+                <Span> Country : </Span> <input type="text" ng-model="user.country" />
+            </div>
+        </div>
+
+    </div>
+</div>
