@@ -7,6 +7,7 @@ marketManApp.controller('userController',function ($scope, $rootScope, $location
   $scope.reverseSort = false;
   $scope.usersList = [];
 
+  // if data not exists then it will update data
   if ($rootScope.usersList === undefined) {
     userAPIservice.getUser().success(function (response) {
       $scope.userList = response.results;
